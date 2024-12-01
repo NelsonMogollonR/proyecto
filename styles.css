@@ -1,0 +1,142 @@
+/*styles.css*/
+header {
+    background: url('https://via.placeholder.com/1500x600') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+header h1,
+header p {
+    color: white;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 450px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+/* Título del formulario */
+.form-container h2 {
+    color: #0077b6;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Campos del formulario */
+.form-container .form-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.form-container .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    padding: 10px;
+}
+
+/* Efecto de foco en los campos del formulario */
+.form-container .form-control:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 8px rgba(0, 119, 182, 0.3);
+}
+
+/* Enlace "Olvidé mi contraseña" */
+.form-container .text-muted {
+    font-size: 0.9rem;
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.form-container .text-muted:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+.form-container .btn-primary {
+    background-color: #0077b6;
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-container .btn-primary:hover {
+    background-color: #005f8a;
+}
+
+.form-container .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-container .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Mensajes de error de validación */
+.form-container .invalid-feedback {
+    color: #e63946;
+    font-size: 0.9rem;
+}
+
+/* Adaptabilidad para móviles */
+@media (max-width: 576px) {
+    .form-container {
+        padding: 20px;
+    }
+}
+.carousel-item img.gallery-img {
+    width: 600px !important; /* Ajusta este valor al ancho deseado */
+    height: 400px !important; /* Ajusta este valor al alto deseado */
+    object-fit: cover !important; /* Mantiene la proporción de la imagen dentro del contenedor */
+    max-width: 100% !important; /* Asegura que la imagen no exceda el ancho del contenedor */
+    margin: auto !important; /* Centra la imagen horizontalmente */
+}
+
+.product-img {
+    width: 600px !important; /* Ajusta este valor al ancho deseado */
+    height: 400px !important; /* Ajusta este valor al alto deseado */
+    object-fit: cover !important; /* Mantiene la proporción de la imagen dentro del contenedor */
+    max-width: 100% !important; /* Asegura que la imagen no exceda el ancho del contenedor */
+    margin: auto !important; /* Centra la imagen horizontalmente */
+}
+/* styles.css */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ajusta el ancho de las flechas para que no se superpongan con las imágenes */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Fondo negro */
+    border-radius: 50%; /* Redondear las flechas, opcional */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: white; /* Flecha blanca */
+}

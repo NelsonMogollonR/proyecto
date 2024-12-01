@@ -1,0 +1,158 @@
+/*Restablecimiento de Estilos Globales*/
+
+*{
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el cálculo del ancho y alto de los elementos */
+    
+}
+/*------------------Estilos del Cuerpo:*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Establece la fuente de todo el cuerpo de la página */
+    background-color: #e4e4e4; /* Establece el color de fondo del cuerpo */
+    display: flex; /* Usa flexbox para el diseño del cuerpo */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    min-height: 100vh; /* Establece la altura mínima del cuerpo a 100% de la altura de la ventana */
+}
+/*Estilos del Formulario:*/
+
+
+form {
+    background-color: #f5f5f5; /* Establece el color de fondo del formulario */
+    padding: 50px; /* Añade un relleno de 50px alrededor del formulario */
+    width: 420px; /* Establece el ancho del formulario */
+    text-align: center; /* Centra el texto dentro del formulario */
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Añade una sombra al formulario */
+}
+/*Estilos del Título del Formulario:*/
+
+
+form h2 {
+    font-size: 25px; /* Establece el tamaño de la fuente del título */
+    color: #1e1e1e; /* Establece el color del texto del título */
+    text-transform: uppercase; /* Convierte el texto del título a mayúsculas */
+    margin-bottom: 35px; /* Añade un margen inferior de 35px al título */
+}
+/*Contenedor de Entradas:*/
+
+
+.input-container {
+    position: relative; /* Establece la posición relativa para poder posicionar elementos dentro del contenedor */
+}
+/*Estilos de Iconos dentro del Contenedor de Entradas:*/
+
+
+.input-container > i {
+    padding: 14px; /* Añade un relleno de 14px al icono */
+    border-radius: 50%; /* Establece un borde redondeado del 50% para hacer el icono circular */
+    background: linear-gradient(90deg, rgba(26, 115, 232, 1) 0%, rgba(26, 85, 232, 1)); /* Aplica un gradiente lineal de azul al fondo del icono */
+    color: #fcfef7; /* Establece el color del texto del icono */
+    position: absolute; /* Posiciona el icono de forma absoluta dentro del contenedor */
+    font-size: 20px; /* Establece el tamaño de la fuente del icono */
+    top: 4px; /* Posiciona el icono a 4px del borde superior del contenedor */
+    left: 10px; /* Posiciona el icono a 10px del borde izquierdo del contenedor */
+}
+/*Estilos de Entradas:*/
+
+
+.input-container > input {
+    padding: 17px 15px 17px 65px; /* Añade relleno interno al input (arriba, derecha, abajo, izquierda) */
+    width: 100%; /* Establece el ancho del input al 100% del contenedor */
+    margin-bottom: 25px; /* Añade un margen inferior de 25px al input */
+    border-radius: 35px; /* Establece un borde redondeado de 35px al input */
+    background-color: transparent; /* Hace el fondo del input transparente */
+    border: 2px solid #CBCBCB; /* Establece un borde sólido de 2px con color #CBCBCB al input */
+    font-size: 16px; /* Establece el tamaño de la fuente del input */
+    outline: none; /* Elimina el contorno del input al recibir el foco */
+    color: #1e1e1e; /* Establece el color del texto del input */
+}
+/*Estilos del Placeholder:*/
+
+
+::placeholder {
+    color: #a0a0a0; /* Establece el color del texto del placeholder */
+    font-size: 16px; /* Establece el tamaño de la fuente del placeholder */
+}
+/*Estilos del Enlace dentro del Formulario:*/
+
+
+.form a {
+    display: block; /* Establece el elemento a como un bloque */
+    color: #a0a0a0; /* Establece el color del texto del enlace */
+    font-size: 15px; /* Establece el tamaño de la fuente del enlace */
+    text-decoration: none; /* Elimina la subrayado del enlace */
+    margin-bottom: 25px; /* Añade un margen inferior de 25px al enlace */
+}
+/*Estilos del Botón de Enviar:*/
+
+
+.btn {
+    background: linear-gradient(90deg, rgba(26, 115, 232, 1) 0%, rgba(26, 85, 232, 1)); /* Aplica un gradiente lineal de azul al fondo del botón */
+    padding: 15px 80px; /* Añade relleno interno al botón (arriba/abajo 15px, izquierda/derecha 80px) */
+    border: 0; /* Elimina el borde del botón */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Añade una sombra al botón */
+    border-radius: 25px; /* Establece un borde redondeado de 25px al botón */
+    color: #fcfef7; /* Establece el color del texto del botón */
+    font-size: 15px; /* Establece el tamaño de la fuente del botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+}
+/*Estilos del Botón de Cancelar:*/
+
+
+.btn-secondary{
+    background: linear-gradient(90deg, rgb(232, 29, 26) 0%, rgba(255, 0, 0, 0.358) 50%); /* Aplica un gradiente lineal de rojo al fondo del botón de cancelar */
+    padding: 15px 80px; /* Añade relleno interno al botón de cancelar (arriba/abajo 15px, izquierda/derecha 80px) */
+    border: 0; /* Elimina el borde del botón de cancelar */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Añade una sombra al botón de cancelar */
+    border-radius: 25px; /* Establece un borde redondeado de 25px al botón de cancelar */
+    color: #fcfef7; /* Establece el color del texto del botón de cancelar */
+    font-size: 15px; /* Establece el tamaño de la fuente del botón de cancelar */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón de cancelar */
+    transition: background 0.3s, box-shadow 0.3s; /* Añade una transición suave para el fondo y la sombra del botón de cancelar */
+}
+/*Estilos del Botón de Cancelar al pasar el Cursor:*/
+
+
+.btn-cancel:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.358) 0%, rgb(232, 29, 26) 100%); /* Cambia el gradiente del fondo del botón de cancelar al pasar el cursor */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); /* Añade una sombra más fuerte al botón de cancelar al pasar el cursor */
+}
+/*Estilos de Mensajes de Éxito:*/
+
+
+.succes {
+    position: absolute; /* Posiciona el mensaje de éxito de forma absoluta */
+    top: 50px; /* Establece la posición superior del mensaje de éxito a 50px */
+    color: #00a735; /* Establece el color del texto del mensaje de éxito */
+    font-size: 18px; /* Establece el tamaño de la fuente del mensaje de éxito */
+}
+/*Estilos de Mensajes de Error:*/
+
+
+.error {
+     position: absolute; /* Posiciona el mensaje de error de forma absoluta */ 
+     top: 50px; /* Establece la posición superior del mensaje de error a 50px */
+      color: #e02e00; /* Establece el color del texto del mensaje de error */ 
+      font-size: 18px; /* Establece el tamaño de la fuente del mensaje de error */
+     }
+      @media (max-width: 991px) { 
+        body { padding: 30px; /* Añade un relleno de 30px al cuerpo en pantallas pequeñas */
+         } 
+         form { 
+            width: 340px; /* Establece el ancho del formulario a 340px en pantallas pequeñas */
+         } 
+        } 
+.input-container > input, .input-container > select { 
+    padding: 17px 25px 17px 65px; /* Añade relleno interno al input (arriba, derecha, abajo, izquierda)17px 15px 17px 65px;  */
+    width: 100%; /* Establece el ancho del input al 100% del contenedor */
+    margin-bottom: 10px; /* Añade un margen inferior de 25px al input */
+    border-radius: 35px; /* Establece un borde redondeado de 35px al input */
+    background-color: transparent; /* Hace el fondo del input transparente */
+    border: 5px solid #CBCBCB; /* Establece un borde sólido de 2px con color #CBCBCB al input */
+    font-size: 16px; /* Establece el tamaño de la fuente del input */
+    outline: none; /* Elimina el contorno del input al recibir el foco */
+    color: #1e1e1e; /* Establece el color del texto del input */
+    }
